@@ -21,17 +21,22 @@ form.addEventListener("submit", (e) => {
             if (value3 == "+") {
                 const result = value1 + value2;
                 results.innerHTML = result;
+                error.innerHTML = "";
             } else if (value3 == "-") {
                 const result = value1 - value2;
                 results.innerHTML = result;
+                error.innerHTML = "";
             } else if (value3 == "*") {
                 const result = value1 * value2;
                 results.innerHTML = result;
+                error.innerHTML = "";
             } else if (value3 == "/") {
                 const result = value1 / value2;
                 results.innerHTML = result;
+                error.innerHTML = "";
             } else {
                 error.innerHTML = "Please select a valid operation type";
+                results.innerHTML = "";
             }
         } else {
             error.innerHTML = "Your inputs are not numbers";
